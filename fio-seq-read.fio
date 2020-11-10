@@ -1,0 +1,15 @@
+[global]
+name=fio-seq-reads
+directory=/mnt/sdb
+#filename=fio-seq-reads
+rw=read
+bs=256K
+direct=1
+numjobs=4
+time_based=1
+runtime=30
+
+[file1]
+size=1G
+ioengine=libaio
+iodepth=16
